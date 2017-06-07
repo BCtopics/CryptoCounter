@@ -31,9 +31,9 @@ class CoinPriceController {
         
         NetworkController.performRequest(for: usdURL, httpMethod: .get, urlParameters: nil, body: nil) { (data, error) in
             
-            guard let data = data else { return }
-            
             guard error == nil else { print("Error: \(String(describing: error?.localizedDescription))"); return }
+            
+            guard let data = data else { NSLog("Data is Invalid"); return }
             
             guard let jsonDictionary = (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)) as? [String: Any] else { completion(nil); return }
             
