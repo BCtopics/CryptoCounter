@@ -1,11 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WjO-zt-UFY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Calculation View Controller-->
+        <scene sceneID="a3k-Mb-fFm">
+            <objects>
+                <viewController id="HRr-gt-wgw" customClass="CalculationViewController" customModule="CryptoCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cRz-Ur-QOE"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJU-RR-K3W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kYy-CK-0fh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k1y-SV-OrK">
+                                <rect key="frame" x="17" y="218" width="340" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="30a-3Q-t5U">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZp-qo-NfT">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="JZ5-ju-mMh"/>
+                                                </constraints>
+                                                <state key="normal" title="BTC Icon" image="BTCIcon"/>
+                                                <connections>
+                                                    <action selector="btcButtonTapped:" destination="HRr-gt-wgw" eventType="touchUpInside" id="IOr-Xl-g5y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtL-ns-tKx">
+                                                <rect key="frame" x="120" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Tu5-ec-tmV"/>
+                                                </constraints>
+                                                <state key="normal" title="ETH Icon" image="EthIcon">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ethButtonTapped:" destination="HRr-gt-wgw" eventType="touchUpInside" id="Fiz-ah-qW9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmh-gP-OAQ">
+                                                <rect key="frame" x="240" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="h14-oJ-JpI"/>
+                                                </constraints>
+                                                <state key="normal" title="Dash Icon" image="DashIcon"/>
+                                                <connections>
+                                                    <action selector="dashButtonTapped:" destination="HRr-gt-wgw" eventType="touchUpInside" id="kmS-59-BJV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Pri-Te-cna"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Om4-V2-FvQ">
+                                        <rect key="frame" x="0.0" y="120" width="340" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOM-RY-DKt">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="8VQ-V4-N37"/>
+                                                </constraints>
+                                                <state key="normal" title="Zcash Icon" image="ZECIcon"/>
+                                                <connections>
+                                                    <action selector="zcashButtonTapped:" destination="HRr-gt-wgw" eventType="touchUpInside" id="54a-xQ-LXW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-od-iGr">
+                                                <rect key="frame" x="120" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="MHA-Zd-dtG"/>
+                                                </constraints>
+                                                <state key="normal" title="Ripple Icon" image="RippleIcon"/>
+                                                <connections>
+                                                    <action selector="rippleButtonTapped:" destination="HRr-gt-wgw" eventType="touchUpInside" id="KU4-QD-o2Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxo-N5-NE4">
+                                                <rect key="frame" x="240" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="4BH-As-yga"/>
+                                                    <constraint firstAttribute="width" constant="100" id="a8h-ka-h6Z"/>
+                                                </constraints>
+                                                <state key="normal" title="LTC Icon" image="LTCIcon"/>
+                                                <connections>
+                                                    <action selector="ltcButtonTapped:" destination="HRr-gt-wgw" eventType="touchUpInside" id="zVW-bw-rzb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount To Calculate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLf-tO-3hW">
+                                <rect key="frame" x="108" y="116" width="159" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount of crypto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rsx-i0-ira">
+                                <rect key="frame" x="16" y="156" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HRr-gt-wgw" id="aJr-o6-ePs"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k1y-SV-OrK" firstAttribute="centerX" secondItem="rsx-i0-ira" secondAttribute="centerX" id="0QP-Id-pF5"/>
+                            <constraint firstItem="rsx-i0-ira" firstAttribute="trailing" secondItem="kYy-CK-0fh" secondAttribute="trailingMargin" id="Prg-sr-GWS"/>
+                            <constraint firstItem="FLf-tO-3hW" firstAttribute="leading" secondItem="kYy-CK-0fh" secondAttribute="leadingMargin" constant="92" id="U3i-R6-GFH"/>
+                            <constraint firstItem="rsx-i0-ira" firstAttribute="top" secondItem="FLf-tO-3hW" secondAttribute="bottom" constant="19.5" id="Vvb-x1-gam"/>
+                            <constraint firstItem="rsx-i0-ira" firstAttribute="top" secondItem="FLf-tO-3hW" secondAttribute="bottom" constant="19.5" id="hFr-jq-XE8"/>
+                            <constraint firstItem="k1y-SV-OrK" firstAttribute="top" secondItem="rsx-i0-ira" secondAttribute="bottom" constant="32" id="kma-Vl-nDW"/>
+                            <constraint firstItem="rsx-i0-ira" firstAttribute="leading" secondItem="kYy-CK-0fh" secondAttribute="leadingMargin" id="lKH-qO-ESG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FLf-tO-3hW" secondAttribute="trailing" constant="92" id="oeH-ah-WhZ"/>
+                            <constraint firstItem="gJU-RR-K3W" firstAttribute="top" secondItem="k1y-SV-OrK" secondAttribute="bottom" constant="229" id="p2a-52-wZj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountEntered" destination="rsx-i0-ira" id="KMJ-OF-ugP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZN-2g-sFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="136.28185907046478"/>
+        </scene>
+        <!--Calc View Controller-->
+        <scene sceneID="1Ik-ep-xGu">
+            <objects>
+                <viewController id="WjO-zt-UFY" customClass="CalcViewController" customModule="CryptoCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nfZ-Wm-XVD"/>
+                        <viewControllerLayoutGuide type="bottom" id="OsJ-da-BEh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r3a-i6-SLt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mr4-xn-D4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BTCIcon" width="225" height="225"/>
+        <image name="DashIcon" width="400" height="400"/>
+        <image name="EthIcon" width="8000" height="8000"/>
+        <image name="LTCIcon" width="510" height="520"/>
+        <image name="RippleIcon" width="664" height="664"/>
+        <image name="ZECIcon" width="2142" height="2142"/>
+    </resources>
 </document>

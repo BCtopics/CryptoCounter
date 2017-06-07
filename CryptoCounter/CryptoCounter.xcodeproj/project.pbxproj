@@ -16,6 +16,8 @@
 		6BE732F41EE89AE5007444BA /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE732F31EE89AE5007444BA /* Coin.swift */; };
 		6BE732F61EE89B1D007444BA /* CoinPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE732F51EE89B1D007444BA /* CoinPriceController.swift */; };
 		6BE732F81EE89B43007444BA /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE732F71EE89B43007444BA /* NetworkController.swift */; };
+		6BE732FA1EE8B600007444BA /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE732F91EE8B600007444BA /* CalcViewController.swift */; };
+		6BE732FC1EE8B666007444BA /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE732FB1EE8B666007444BA /* CalculationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		6BE732F31EE89AE5007444BA /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		6BE732F51EE89B1D007444BA /* CoinPriceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinPriceController.swift; sourceTree = "<group>"; };
 		6BE732F71EE89B43007444BA /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		6BE732F91EE8B600007444BA /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
+		6BE732FB1EE8B666007444BA /* CalculationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,7 @@
 				6BE732BF1EE899DE007444BA /* AppDelegate.swift */,
 				6BE732F11EE89ACA007444BA /* ModelControllers */,
 				6BE732F01EE89AC3007444BA /* Models */,
-				6BE732EF1EE89ABC007444BA /* Views */,
+				6BE732EF1EE89ABC007444BA /* Cells */,
 				6BE732EE1EE89A04007444BA /* ViewControllers */,
 				6BE732F21EE89AD0007444BA /* Networking */,
 				6BE732ED1EE899FE007444BA /* Resources */,
@@ -144,15 +148,17 @@
 			isa = PBXGroup;
 			children = (
 				6BE732C31EE899DE007444BA /* Main.storyboard */,
+				6BE732F91EE8B600007444BA /* CalcViewController.swift */,
+				6BE732FB1EE8B666007444BA /* CalculationViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		6BE732EF1EE89ABC007444BA /* Views */ = {
+		6BE732EF1EE89ABC007444BA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Views;
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		6BE732F01EE89AC3007444BA /* Models */ = {
@@ -318,7 +324,9 @@
 			files = (
 				6BE732F81EE89B43007444BA /* NetworkController.swift in Sources */,
 				6BE732F41EE89AE5007444BA /* Coin.swift in Sources */,
+				6BE732FA1EE8B600007444BA /* CalcViewController.swift in Sources */,
 				6BE732F61EE89B1D007444BA /* CoinPriceController.swift in Sources */,
+				6BE732FC1EE8B666007444BA /* CalculationViewController.swift in Sources */,
 				6BE732C01EE899DE007444BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
