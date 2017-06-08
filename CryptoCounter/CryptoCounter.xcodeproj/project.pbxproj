@@ -578,6 +578,7 @@
 				6BE732E61EE899DF007444BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BE732E71EE899DF007444BA /* Build configuration list for PBXNativeTarget "CryptoCounterTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +587,7 @@
 				6BE732E91EE899DF007444BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BE732EA1EE899DF007444BA /* Build configuration list for PBXNativeTarget "CryptoCounterUITests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +596,7 @@
 				6BE732EC1EE899DF007444BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

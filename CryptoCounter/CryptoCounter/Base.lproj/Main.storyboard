@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WjO-zt-UFY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VXW-0h-ezd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -138,9 +138,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZN-2g-sFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="136.28185907046478"/>
+            <point key="canvasLocation" x="12" y="135"/>
         </scene>
-        <!--Calc View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="JGT-8Z-aya">
+            <objects>
+                <tabBarController id="VXW-0h-ezd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="n95-7E-C0J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WjO-zt-UFY" kind="relationship" relationship="viewControllers" id="LYR-D3-OTo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7S-xz-lvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="929"/>
+        </scene>
+        <!--Price-->
         <scene sceneID="1Ik-ep-xGu">
             <objects>
                 <viewController id="WjO-zt-UFY" customClass="CalcViewController" customModule="CryptoCounter" customModuleProvider="target" sceneMemberID="viewController">
@@ -153,10 +170,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Price" id="IFW-gi-AHL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mr4-xn-D4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="136"/>
+            <point key="canvasLocation" x="588" y="929"/>
         </scene>
     </scenes>
     <resources>
